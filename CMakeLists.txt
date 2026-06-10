@@ -8,7 +8,7 @@ FILE(GLOB_RECURSE app_sources ${CMAKE_CURRENT_SOURCE_DIR}/platform/*.cpp)
 target_sources(app PRIVATE
   ${app_sources}
 )
-target_include_directories(app PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
+target_include_directories(app PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/platform)
 
 add_custom_target(
     fix
