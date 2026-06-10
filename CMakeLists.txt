@@ -1,0 +1,23 @@
+cmake_minimum_required(VERSION 3.20.0)
+
+set(BOARD nucleo_f439zi)
+set(BOARD_FLASH_RUNNER openocd)
+
+find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})
+project(poc LANGUAGES C CXX)
+rust_cargo_application()
+
+FILE(GLOB_RECURSE app_sources ${CMAKE_CURRENT_SOURCE_DIR}/platform/*.cpp)
+target_sources(app PRIVATE
+  ${app_sources}
+)
+target_include_directories(app PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
+
+add_custom_target(
+    fix
+    COMMAND
+        ${CMAKE_SOURCE_DIR}/fix_glibcpp.py
+)
+
+add_dependencies(app fix)
+

@@ -1,0 +1,11 @@
+# IDEs and other tool caches
+/.idea
+/.vs
+/.vscode
+/.nvim
+/.cache
+/.claude
+
+# Build artifacts
+/build
+/target

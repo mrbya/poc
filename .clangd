@@ -1,0 +1,4 @@
+CompileFlags:
+  Add: [ ]
+  Remove: [ -mfp16-format=ieee, -fno-printf-return-value, -fno-reorder-functions, -fno-tree-switch-conversion, -mtext-section-literals, -mlongcalls, -fstrict-volatile-bitfields, -fno-freestanding ]
+
