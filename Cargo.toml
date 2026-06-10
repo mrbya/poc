@@ -1,14 +1,47 @@
+[workspace]
+members = [
+    "./",
+    "crates/poc-adapter",
+    "crates/poc-app",
+    "crates/poc-core",
+    "crates/poc-service",
+]
+resolver = "2"
+
+[workspace.package]
+authors                 = ["mrbya <v.toth.svk2@gmail.com>"]
+description             = "A proof of concept smart hub app"
+edition                 = "2021"
+homepage                = "https://gitlab.com/zos-rust/poc.git"
+repository              = "https://gitlab.com/zos-rust/poc.git"
+license                 = "MIT OR Apache-2.0"
+version                 = "0.1.0"
+
 [package]
 # This must be rustapp for now.
-name = "rustapp"
-version = "0.1.0"
-edition = "2021"
-description = "Proof of concept smart hub app"
-license = "Apache-2.0 or MIT"
+name                    = "rustapp"
+authors.workspace       = true
+description.workspace   = true
+edition.workspace       = true
+homepage.workspace      = true
+repository.workspace    = true
+license.workspace       = true
+version.workspace       = true
+
+[workspace.dependencies]
+# Poc hub crates
+poc-adapter             = { path = "crates/poc-adapter" }
+poc-app                 = { path = "crates/poc-app" }
+poc-core                = { path = "crates/poc-core" }
+poc-cservice            = { path = "crates/poc-cservice" }
+# Other workspace deps
+zephyr                  = { version = "0.1.0" }
+log                     = { version = "0.4.22" }
+
+[dependencies]
+zephyr.workspace        = true
+log.workspace           = true
 
 [lib]
 crate-type = ["staticlib"]
 
-[dependencies]
-zephyr = "0.1.0"
-log = "0.4.22"

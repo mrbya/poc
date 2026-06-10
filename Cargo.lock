@@ -345,6 +345,22 @@ dependencies = [
 ]
 
 [[package]]
+name = "poc-adapter"
+version = "0.1.0"
+
+[[package]]
+name = "poc-app"
+version = "0.1.0"
+
+[[package]]
+name = "poc-core"
+version = "0.1.0"
+
+[[package]]
+name = "poc-service"
+version = "0.1.0"
+
+[[package]]
 name = "portable-atomic"
 version = "1.13.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"

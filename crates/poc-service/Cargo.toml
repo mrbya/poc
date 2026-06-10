@@ -1,0 +1,12 @@
+[package]
+name = "poc-service"
+authors.workspace = true
+edition.workspace = true
+homepage.workspace = true
+repository.workspace = true
+license.workspace = true
+version.workspace = true
+
+description = "Proof-of-concept service layer"
+
+[dependencies]

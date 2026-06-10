@@ -11,8 +11,8 @@ root = "build"
 # Build profiles
 [profile.sim]
 board = "qemu_cortex_m3"
-args = { conf = [""], build = [""], run = [""], flash = [""] }
+# args = { conf = [""], build = [""], run = [""], flash = [""] }
 
 [profile.prod]
 board = "nucleo_f439zi"
-args = { conf = [""], build = [""], run = [""], flash = [""] }
+# args = { conf = [""], build = [""], run = [""], flash = [""] }
