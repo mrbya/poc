@@ -1,5 +1,5 @@
 #![no_std]
 
-pub fn add(a: impl Into<i64>, b: impl Into<i64>) -> impl Into<i64> {
+pub fn add(a: i32, b: i32) -> i32 {
     a.saturating_add(b)
 }

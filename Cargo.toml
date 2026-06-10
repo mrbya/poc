@@ -33,7 +33,7 @@ version.workspace       = true
 poc-adapter             = { path = "crates/poc-adapter" }
 poc-app                 = { path = "crates/poc-app" }
 poc-core                = { path = "crates/poc-core" }
-poc-cservice            = { path = "crates/poc-cservice" }
+poc-service             = { path = "crates/poc-service" }
 # Other workspace deps
 zephyr                  = { version = "0.1.0" }
 log                     = { version = "0.4.22" }
