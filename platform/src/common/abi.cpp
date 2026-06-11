@@ -11,7 +11,7 @@ extern "C" uint64_t poc_uptime_ms() {
 
 extern "C" poc_status_t poc_log_info(poc_bytes_t message) {
     if ((message.ptr == nullptr) && (message.len != 0U)) {
-        return poc_status_t(invalid_arg);
+        return poc_status_t(InvalidArg);
     }
 
     LOG_INF("%.*s",
@@ -19,5 +19,5 @@ extern "C" poc_status_t poc_log_info(poc_bytes_t message) {
             reinterpret_cast<const char*>(message.ptr)
     );
 
-    return poc_status_t(ok);
+    return poc_status_t(Ok);
 }

@@ -8,12 +8,12 @@ extern "C" {
 #endif
 
 typedef enum {
-    ok = 0,
-    io = -1,
-    invalid_arg = -2,
-    timeout = -3,
-    busy = -4,
-    internal = -5
+    Ok = 0,
+    Io = -1,
+    InvalidArg = -2,
+    Timeout = -3,
+    Busy = -4,
+    Internal = -5
 } poc_status_t;
 
 typedef struct {

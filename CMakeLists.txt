@@ -4,9 +4,13 @@ find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})
 project(poc LANGUAGES C CXX)
 rust_cargo_application()
 
-FILE(GLOB_RECURSE app_sources ${CMAKE_CURRENT_SOURCE_DIR}/platform/*.cpp)
+set(srcDir ${CMAKE_CURRENT_SOURCE_DIR}/platform/src)
+FILE(GLOB commonSources ${srcDir}/common/*.cpp)
+FILE(GLOB drvBackend ${srcDir}/backends/qemu/*.cpp)
+
 target_sources(app PRIVATE
-  ${app_sources}
+  ${commonSources}
+  ${drvBackend}
 )
 target_include_directories(app PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/platform)
 
