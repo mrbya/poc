@@ -1,4 +1,4 @@
-#include <abi/abi.h>
+#include <abi.h>
 
 #include <zephyr/kernel.h>
 #include <zephyr/logging/log.h>

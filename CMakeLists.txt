@@ -12,7 +12,7 @@ target_sources(app PRIVATE
   ${commonSources}
   ${drvBackend}
 )
-target_include_directories(app PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/platform)
+target_include_directories(app PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/platform/include)
 
 add_custom_target(
     fix

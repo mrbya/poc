@@ -40,6 +40,9 @@ log                     = { version = "0.4.22" }
 
 [dependencies]
 poc-adapter.workspace   = true
+poc-app.workspace       = true
+poc-core.workspace      = true
+poc-service.workspace   = true
 zephyr.workspace        = true
 log.workspace           = true
 

@@ -10,3 +10,6 @@ version.workspace = true
 description = "Proof-of-concept hub app domain logic"
 
 [dependencies]
+poc-core.workspace = true
+poc-adapter.workspace = true
+poc-service.workspace = true

@@ -354,6 +354,11 @@ dependencies = [
 [[package]]
 name = "poc-app"
 version = "0.1.0"
+dependencies = [
+ "poc-adapter",
+ "poc-core",
+ "poc-service",
+]
 
 [[package]]
 name = "poc-core"
@@ -362,6 +367,9 @@ version = "0.1.0"
 [[package]]
 name = "poc-service"
 version = "0.1.0"
+dependencies = [
+ "poc-core",
+]
 
 [[package]]
 name = "portable-atomic"
@@ -444,6 +452,9 @@ version = "0.1.0"
 dependencies = [
  "log",
  "poc-adapter",
+ "poc-app",
+ "poc-core",
+ "poc-service",
  "zephyr",
 ]
 

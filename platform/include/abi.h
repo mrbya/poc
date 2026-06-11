@@ -23,6 +23,7 @@ typedef struct {
 
 uint64_t poc_uptime_ms(void);
 poc_status_t poc_log_info(poc_bytes_t message); 
+void poc_platform_start_tick_runtime(void);
 
 #ifdef __cplusplus
 }
