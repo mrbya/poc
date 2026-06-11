@@ -39,6 +39,7 @@ zephyr                  = { version = "0.1.0" }
 log                     = { version = "0.4.22" }
 
 [dependencies]
+poc-adapter.workspace   = true
 zephyr.workspace        = true
 log.workspace           = true
 

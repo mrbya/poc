@@ -347,6 +347,9 @@ dependencies = [
 [[package]]
 name = "poc-adapter"
 version = "0.1.0"
+dependencies = [
+ "poc-core",
+]
 
 [[package]]
 name = "poc-app"
@@ -440,6 +443,7 @@ name = "rustapp"
 version = "0.1.0"
 dependencies = [
  "log",
+ "poc-adapter",
  "zephyr",
 ]
 

@@ -10,3 +10,4 @@ version.workspace = true
 description = "Proof-of-concept hub adapter wrapper"
 
 [dependencies]
+poc-core.workspace = true
